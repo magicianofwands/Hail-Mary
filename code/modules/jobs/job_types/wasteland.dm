@@ -53,12 +53,11 @@
 	/datum/outfit/loadout/gambler,
 	/datum/outfit/loadout/vaquero,
 	/datum/outfit/loadout/hobo,
-	/datum/outfit/loadout/hombre,
+	/datum/outfit/loadout/cowboy,
 	/datum/outfit/loadout/exmil,
 	/datum/outfit/loadout/strandedbos,
 	/datum/outfit/loadout/eidolon,
-	/datum/outfit/loadout/aviator,
-	/datum/outfit/loadout/trapper,
+	/datum/outfit/loadout/hunter,
 	/datum/outfit/loadout/trouper,
 	/datum/outfit/loadout/monk)
 //	/datum/outfit/loadout/ncrcitizen,
@@ -71,7 +70,7 @@
 
 	id = null
 	ears = null
-	belt = /obj/item/kit_spawner/waster
+	//belt = /obj/item/kit_spawner/waster
 	//suit_store = /obj/item/kit_spawner/tools //suit_store not workin
 	l_pocket = /obj/item/storage/wallet/stash/low
 	r_pocket = /obj/item/flashlight/flare
@@ -261,7 +260,7 @@
 	//	/obj/item/gun/ballistic/revolver/hobo/piperifle =1,
 	//	/obj/item/ammo_box/a556=1,)
 
-/datum/outfit/loadout/hombre
+/datum/outfit/loadout/cowboy
 	name = "Cowboy"
 	suit = /obj/item/clothing/suit/armor/outfit/vest/cowboy
 	uniform = /obj/item/clothing/under/f13/cowboyb
