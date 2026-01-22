@@ -83,6 +83,7 @@
 		///obj/item/reagent_containers/hypospray/medipen/stimpak, //we don't need this big advantage to being a wastelander instead of citizen
 		///obj/item/reagent_containers/hypospray/medipen/stimpak,
 		/obj/item/storage/pill_bottle/chem_tin/radx,
+		/obj/item/kit_spawner/books,
 		/obj/item/kit_spawner/tools,
 		)
 

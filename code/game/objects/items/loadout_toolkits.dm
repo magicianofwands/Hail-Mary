@@ -304,9 +304,6 @@
 /obj/item/storage/box/tools/entertainer/PopulateContents() //needs more substance and love. needs crocin in beaker form
 	new /obj/item/choice_beacon/music(src)
 	new /obj/item/musicaltuner(src)
-	new /obj/item/melee/classic_baton/telescopic(src)
-	new /obj/item/reagent_containers/glass/bottle/chloralhydrate(src)
-	new /obj/item/restraints/handcuffs/fake/kinky(src)
 	new /obj/item/reagent_containers/food/snacks/grown/fever_blossom(src)
 
 /datum/loadout_box/entertainer
@@ -600,3 +597,27 @@
 	entry_flags = LOADOUT_FLAG_TOOL_WASTER
 	entry_class = LOADOUT_CAT_WORKER
 	spawn_thing = /obj/item/storage/box/tools/animal
+
+// Book kits start here
+
+/obj/item/kit_spawner/books
+	name = "book kit"
+	desc = "a sturdy bag keeping your knowledge of choice safe until you pop it open."
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "backpack_enclave"
+	item_state = "backpack_enclave"
+	lefthand_file = 'icons/mob/inhands/equipment/backpack_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/backpack_righthand.dmi'
+	allowed_flags = LOADOUT_FLAG_BOOK
+
+/obj/item/storage/box/books/salvage
+	name = "Salvaging"
+
+/obj/item/storage/box/books/salave/PopulateContents()
+	new /obj/item/book/granter/trait/techno(src)
+
+/datum/loadout_box/farming
+	entry_tag = "Salvaging"
+	entry_flags = LOADOUT_FLAG_BOOK
+	entry_class = LOADOUT_CAT_WORKER
+	spawn_thing = /obj/item/storage/box/books/salave

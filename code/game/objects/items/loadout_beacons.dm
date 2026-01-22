@@ -7,6 +7,7 @@
 #define LOADOUT_FLAG_TRIBAL (1<<3)
 #define LOADOUT_FLAG_PREACHER (1<<4)
 #define LOADOUT_FLAG_TOOL_WASTER (1<<5)
+#define LOADOUT_FLAG_BOOK (1<<5)
 
 #define LOADOUT_BITFIELD "loadout_bitfield"
 #define LOADOUT_CLASS "loadout_class"
