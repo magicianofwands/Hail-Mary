@@ -117,8 +117,7 @@
 	backpack_contents = list(/obj/item/mining_scanner=1,
 							/obj/item/metaldetector=1,
 							/obj/item/shovel=1,
-							/obj/item/gun/ballistic/automatic/pistol/m1911=1,
-							/obj/item/ammo_box/magazine/m45 = 2,
+							obj/item/gun/ballistic/automatic/pistol/m1911=1, /obj/item/ammo_box/magazine/m45 = 2,
 							)
 
 /datum/outfit/loadout/settler
@@ -168,7 +167,7 @@
 	head = /obj/item/clothing/head/f13/stormchaser
 	gloves = /obj/item/clothing/gloves/color/brown
 	glasses = /obj/item/clothing/glasses/f13/biker
-	l_hand = /obj/item/gun/ballistic/revolver/caravan_shotgun
+	/l_hand = /obj/item/gun/ballistic/revolver/caravan_shotgun
 	backpack_contents =  list(/obj/item/storage/box/vendingmachine=1,
 							/obj/item/ammo_box/shotgun/buck = 2,
 							)
@@ -282,9 +281,9 @@
 	head = /obj/item/clothing/head/flakhelm
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	gloves = /obj/item/clothing/gloves/f13/military
-	l_hand = /obj/item/gun/ballistic/automatic/pistol/ninemil
+	/l_hand = /obj/item/gun/ballistic/automatic/pistol/ninemil
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m9mm/doublestack=2,
+	/	/obj/item/ammo_box/magazine/m9mm/doublestack=2,
 		/obj/item/storage/fancy/cigarettes/dromedaryco=1,)
 
 /datum/outfit/loadout/strandedbos
