@@ -619,5 +619,5 @@
 /datum/loadout_box/farming
 	entry_tag = "Salvaging"
 	entry_flags = LOADOUT_FLAG_BOOK
-	entry_class = LOADOUT_CAT_WORKER
+	entry_class = LOADOUT_CAT_BOOK
 	spawn_thing = /obj/item/storage/box/books/salave
