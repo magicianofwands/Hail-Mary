@@ -41,7 +41,7 @@
 			/datum/job/wasteland/f13wastelander,
 		),
 	)
-	/*
+	
 	loadout_options = list(
 	/datum/outfit/loadout/vault_refugee,
 	/datum/outfit/loadout/salvager,
@@ -64,7 +64,7 @@
 //	/datum/outfit/loadout/ncrcitizen,
 //	/datum/outfit/loadout/legioncivilian,
 //	/datum/outfit/loadout/wastelander_desert_ranger)
-*/
+
 /datum/outfit/job/wasteland/f13wastelander
 	name = "Wastelander"
 	jobtype = /datum/job/wasteland/f13wastelander
@@ -80,8 +80,8 @@
 	box = /obj/item/storage/survivalkit
 	box_two = /obj/item/storage/survivalkit/medical
 	backpack_contents = list(
-		///obj/item/reagent_containers/hypospray/medipen/stimpak, //we don't need this big advantage to being a wastelander instead of citizen
-		///obj/item/reagent_containers/hypospray/medipen/stimpak,
+		///obj/item/reagent_containers/hypospray/medipen/stimpak
+		///obj/item/reagent_containers/hypospray/medipen/stimpak //we don't need this big advantage to being a wastelander instead of citizen
 		/obj/item/storage/pill_bottle/chem_tin/radx,
 		/obj/item/kit_spawner/tools,
 		)
@@ -99,7 +99,7 @@
 		/obj/item/clothing/suit/armor/outfit/jacket/merc, \
 		/obj/item/clothing/suit/toggle/labcoat/wanderer)
 */
-/*
+
 /datum/outfit/loadout/salvager
 	name = "Salvager"
 	uniform = /obj/item/clothing/under/f13/machinist
@@ -107,10 +107,10 @@
 	gloves = /obj/item/clothing/gloves/f13/blacksmith
 	head = /obj/item/clothing/glasses/welding
 	r_hand = /obj/item/weldingtool/largetank
-	//backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/m1911=1, /obj/item/ammo_box/magazine/m45 = 2,)
+	backpack_contents = list(/obj/item/gun/ballistic/automatic/pistol/m1911=1, /obj/item/ammo_box/magazine/m45 = 2,)
 
 /datum/outfit/loadout/scavenger
-	name = "Scavenger"
+	name = "Miner"
 	shoes = /obj/item/clothing/shoes/f13/explorer
 	r_hand = /obj/item/storage/backpack/duffelbag/scavengers
 	l_hand = /obj/item/pickaxe/drill
@@ -118,11 +118,11 @@
 	backpack_contents = list(/obj/item/mining_scanner=1,
 							/obj/item/metaldetector=1,
 							/obj/item/shovel=1,
-							///obj/item/gun/ballistic/automatic/pistol/m1911=1, /obj/item/ammo_box/magazine/m45 = 2,
+							obj/item/gun/ballistic/automatic/pistol/m1911=1, /obj/item/ammo_box/magazine/m45 = 2,
 							)
 
 /datum/outfit/loadout/settler
-	name = "Settler"
+	name = "Builder"
 	uniform = /obj/item/clothing/under/f13/settler
 	shoes = /obj/item/clothing/shoes/f13/explorer
 	r_hand = /obj/item/pitchfork
@@ -151,7 +151,7 @@
 	belt = /obj/item/storage/belt/medical
 	backpack_contents =  list(/obj/item/reagent_containers/medspray/synthflesh=2,
 							/obj/item/healthanalyzer=1,
-							///obj/item/gun/ballistic/automatic/pistol/m1911=1,
+							/obj/item/gun/ballistic/automatic/pistol/m1911=1,
 							/obj/item/reagent_containers/glass/bottle/epinephrine=2,
 							/obj/item/paper_bin=1,
 							/obj/item/folder=1,
@@ -161,16 +161,16 @@
 		)
 
 /datum/outfit/loadout/merchant
-	name = "Roving Trader"
+	name = "Merchant"
 	uniform = /obj/item/clothing/under/f13/merchant
 	neck = /obj/item/clothing/neck/mantle/brown
 	shoes = /obj/item/clothing/shoes/f13/brownie
 	head = /obj/item/clothing/head/f13/stormchaser
 	gloves = /obj/item/clothing/gloves/color/brown
 	glasses = /obj/item/clothing/glasses/f13/biker
-	//l_hand = /obj/item/gun/ballistic/revolver/caravan_shotgun
+	/l_hand = /obj/item/gun/ballistic/revolver/caravan_shotgun
 	backpack_contents =  list(/obj/item/storage/box/vendingmachine=1,
-							///obj/item/ammo_box/shotgun/buck = 2,
+							/obj/item/ammo_box/shotgun/buck = 2,
 							)
 
 /datum/outfit/loadout/gambler
@@ -178,7 +178,7 @@
 	uniform = /obj/item/clothing/under/f13/bennys
 	shoes = /obj/item/clothing/shoes/f13/fancy
 	head = /obj/item/clothing/head/fedora
-	//l_hand = /obj/item/gun/ballistic/revolver/m29/snub
+	l_hand = /obj/item/gun/ballistic/revolver/m29/snub
 	backpack_contents = list(
 		/obj/item/storage/fancy/cigarettes/cigars/cohiba=1,
 		/obj/item/coin/gold=1,
@@ -186,21 +186,21 @@
 		/obj/item/toy/cards/deck=1,
 		/obj/item/storage/box/dice=1,
 		/obj/item/stack/tile/carpet/blackred/fifty=1,
-		///obj/item/ammo_box/m44=2
+		/obj/item/ammo_box/m44=2
 		)
 
 //end new
 
 /datum/outfit/loadout/vault_refugee
-	name = "Vaultie"
+	name = "Vault Dweller"
 	uniform = /obj/item/clothing/under/f13/vault
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/fingerless
 	id = /obj/item/card/id/selfassign
 	suit = /obj/item/clothing/suit/suspenders
 	backpack_contents = list(
-		///obj/item/gun/ballistic/automatic/pistol/n99=1,
-		///obj/item/ammo_box/magazine/m10mm/adv/simple=2,
+		/obj/item/gun/ballistic/automatic/pistol/n99=1,
+		/obj/item/ammo_box/magazine/m10mm/adv/simple=2,
 		/obj/item/pda=1,)
 
 /datum/outfit/loadout/warrior
@@ -262,7 +262,7 @@
 	//	/obj/item/ammo_box/a556=1,)
 
 /datum/outfit/loadout/hombre
-	name = "Hombre"
+	name = "Cowboy"
 	suit = /obj/item/clothing/suit/armor/outfit/vest/cowboy
 	uniform = /obj/item/clothing/under/f13/cowboyb
 	head = /obj/item/clothing/head/cowboyhat
@@ -282,21 +282,21 @@
 	head = /obj/item/clothing/head/flakhelm
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	gloves = /obj/item/clothing/gloves/f13/military
-	//l_hand = /obj/item/gun/ballistic/automatic/pistol/ninemil
+	/l_hand = /obj/item/gun/ballistic/automatic/pistol/ninemil
 	backpack_contents = list(
-	//	/obj/item/ammo_box/magazine/m9mm/doublestack=2,
+	/	/obj/item/ammo_box/magazine/m9mm/doublestack=2,
 		/obj/item/storage/fancy/cigarettes/dromedaryco=1,)
 
 /datum/outfit/loadout/strandedbos
-	name = "Stranded BoS Member"
+	name = "Brotherhood of Steel Exile"
 	suit = /obj/item/clothing/suit/armor/light/duster/bos
 	uniform = /obj/item/clothing/under/f13/bos/fatigues
 	shoes = /obj/item/clothing/shoes/f13/military
 	head = /obj/item/clothing/head/beret/black
 	gloves = /obj/item/clothing/gloves/f13/military
-	//l_hand = /obj/item/gun/energy/laser/wattzs
+	l_hand = /obj/item/gun/energy/laser/wattzs
 	backpack_contents = list(
-	//	/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/card/id/rusted/brokenholodog = 1,)
 
 /datum/outfit/loadout/eidolon
@@ -313,20 +313,9 @@
 		/obj/item/reagent_containers/food/drinks/flask/russian=1,
 		/obj/item/reagent_containers/food/drinks/bottle/vodka/badminka=1,)
 
-/datum/outfit/loadout/aviator
-	name = "Aviator"
-	suit = /obj/item/clothing/suit/bomber
-	uniform = /obj/item/clothing/under/color/grey/glorf
-	shoes = /obj/item/clothing/shoes/f13/tan
-	glasses = /obj/item/clothing/glasses/legiongoggles
-	neck = /obj/item/storage/belt/shoulderholster
-	gloves = /obj/item/clothing/gloves/rifleman
-	backpack_contents = list(
-		/obj/item/lighter/fusion=1,
-		/obj/item/storage/fancy/cigarettes/cigpack_carp =1,)
 
-/datum/outfit/loadout/trapper
-	name = "Trapper"
+/datum/outfit/loadout/hunter
+	name = "Hunter"
 	suit = /obj/item/clothing/suit/armor/light/duster/brahmin
 	uniform = /obj/item/clothing/under/f13/worn
 	shoes = /obj/item/clothing/shoes/f13/military/leather
@@ -339,7 +328,7 @@
 		/obj/item/storage/box/mousetraps=3,)
 
 /datum/outfit/loadout/trouper
-	name = "Trouper"
+	name = "Entertainer"
 	suit = /obj/item/clothing/neck/mantle/poncho
 	uniform = /obj/item/clothing/under/redeveninggown
 	shoes = /obj/item/clothing/shoes/f13/fancy
@@ -348,8 +337,6 @@
 	backpack_contents = list(
 	//	/obj/item/ammo_box/magazine/m22=2,
 		/obj/item/reagent_containers/food/drinks/shaker=1,
-		/obj/item/restraints/handcuffs/fake/kinky=1,
-		/obj/item/melee/onehanded/slavewhip=1,
 		/obj/item/storage/fancy/cigarettes/cigpack_cannabis=1,
 		/obj/item/reagent_containers/food/drinks/bottle/trappist=1,
 		/obj/item/reagent_containers/food/drinks/bottle/applejack=1,
@@ -360,7 +347,7 @@
 	suit = /obj/item/clothing/suit/armor/light/kit/punk
 	shoes = /obj/item/clothing/shoes/wraps
 	head = /obj/item/clothing/head/helmet/f13/khan/bandana
-	//gloves = /obj/item/clothing/gloves/fingerless/pugilist/rapid
+	gloves = /obj/item/clothing/gloves/fingerless/pugilist/rapid
 
 // end dr wasteland loadout port
 /*
@@ -402,7 +389,7 @@
 		/obj/item/ammo_box/a357=2,
 		/obj/item/binoculars=1,
 		/obj/item/radio=1)*/
-*/
+
 /*/datum/job/wasteland/f13enforcer
 	title = "Den Mob Enforcer"
 	flag = F13ENFORCER
